@@ -1,0 +1,346 @@
+@media (max-width: 768px) {
+  /*html {
+    scroll-behavior: smooth;
+  }*/
+  /* Entire Layout */
+  .cd-section {
+    height: auto;
+  }
+  .cd-section > div {
+    height: auto;
+  }
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Header */
+  header {
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .menu {
+    display: block;
+  }
+  .slogan {
+    display: none;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .menu {
+    line-height: 40px;
+    margin-top: 60px;
+  }
+  .menu a {
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  /* Trigger */
+  .trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg)
+  }
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg)
+  }
+  
+  /* Gototop */
+.gototop {
+position: fixed;
+bottom: 20px;
+left: 20px;
+border: 1px solid #fff;
+display: block;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+transform: translateY(30px);
+opacity: 0;
+transition: 0.5s;
+  }
+.gototop.active {
+opacity: 1;
+transform: translateY(0);
+  }
+.btn-hiring {
+right: 20px;
+bottom: 20px;
+}
+
+.cd-vertical-nav {
+  display: none;
+}
+
+/* Show Hide Section */
+/*
+#home,
+#about,
+#project,
+#plan,
+#awards,
+#location, 
+#contact {
+  display: none;  
+ }
+*/
+  
+/* Mobile Home */
+  .home-inner {
+    height: 100vh;
+  }
+  
+  .welcome-text {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+  }
+  
+  .home-heading {
+  left: 20px;
+}
+  .home-heading span {
+    font-size: 50px;
+  }
+
+
+/* Mobile about */
+  .about-inner {
+    padding: 20px;
+    height: auto;
+/*    background: #0dace3;*/
+  }
+  .about-items {
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    transform: none;
+    text-align: center;
+  }
+  .item img {
+    float: none;
+  }
+  
+/* Mobile Plan */
+  .plan-inner {
+    height: auto;
+    padding: 20px;
+  }
+  .plan-feature {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+  .plan-feature > div {
+    height: auto;
+  }
+  .plan-info > div {
+    float: none;
+    width: 100%;
+  }
+  .plan-info {
+    margin-bottom: 40px;
+  }
+  .plan-photo img {
+    width: 100%;
+    height: auto;
+  }
+  .plan-heading {
+    padding-right: 0;
+  }
+  
+/* Mobile Awards */
+  .awards-inner {
+    height: auto;
+    border: none;
+  }
+  .awards-inner > div {
+    float: none;
+    width: 100%;
+  }
+  .awards-heading,
+  .victory-jump img {
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+  }
+  .awards-heading {
+    width: 100%;
+  }
+ 
+  .victory-jump {
+    text-align: center;
+  }
+/* Mobile Location */
+  .location-inner {
+    height: auto;
+  }
+  .feature {
+    width: 100%;
+    transform: none;
+    position: relative;
+     top: 0;
+    left: 0;
+  }
+  .feature > div {
+    float: none;
+    width: 100%;
+    padding: 20px;
+   
+  }
+/* Mobile Contact */
+.contact-inner {
+  height: auto;
+  padding: 20px;
+  position: relative;
+}
+.contact-feature {
+  position: static;
+  transform: none;
+  width: 100%;
+}
+  .contact-feature > div {
+    float: none;
+    width: 100%;
+  }
+  .contact-form {
+    padding: 0;
+  }
+/* Mobile Project */
+  .project-inner {
+    height: auto;
+    border: none;
+  }
+  .tab > div {
+    float: none;
+    width: 100%;
+  }
+  .view-project {
+    width: 100%;
+    
+  }
+  .btn {
+    width: 100%;
+    bottom: -30px;
+    padding-bottom: 35px;
+  }
+/* Mobile Hiring */
+  .hiring-main {
+    height: 300px;
+  }
+  .hiring-heading h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .hiring-heading {
+    width: 100%;
+    top: 60%;
+  }
+  .hiring-info {
+    padding: 20px;
+  }
+  .hiring-info > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .center-child {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+  .hiring-slogan {
+    padding: 50px 0;
+  }
+  .hiring-slogan p {
+    font-size: 26px;
+  }
+  .hiring-slogan p:before {
+    top: -120px;
+    left: -20px !important;
+  }
+  .hiring-contact ul {
+    display: block;
+  }
+  .center-child h2 {
+    font-size: 26px;
+  }
+  
+/* Mobile Project */
+.hiring-main.project-main1,
+.hiring-main.project-main2,
+.hiring-main.project-main3 {
+    height: 70vh;
+}
+.hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1{
+  font-size: 40px;  
+}
+  .photo.project-info {
+    font-size: 19px;
+    padding-top: 5px;
+  }
+  .detail div span {
+    font-size: 24px;
+  }
+  .detail div {
+    font-size: 13px;
+  }
+}
+
+
+
+
+
