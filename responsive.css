@@ -157,7 +157,6 @@ bottom: 20px;
 
 /* Mobile about */
   .about-inner {
-    padding: 20px;
     height: auto;
 /*    background: #0dace3;*/
   }
@@ -168,8 +167,20 @@ bottom: 20px;
     transform: none;
     text-align: center;
   }
+  .item {
+    margin-bottom: 0;
+  }
+  .item h3{
+    padding: 0 10px;
+    font-size: 26px;
+  }
+  .item p {
+    padding: 0 10px;
+    font-size: 16px;
+  }
   .item img {
     float: none;
+    height: 100px;
   }
   
 /* Mobile Plan */
@@ -213,20 +224,33 @@ bottom: 20px;
   .victory-jump img {
     position: static;
     transform: none;
-    padding: 40px 20px;
   }
   .awards-heading {
     width: 100%;
+    padding: 30px 20px;
   }
  
   .victory-jump {
     text-align: center;
+    height: 100%;
+  }
+  .victory-jump img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+  }
+  .awards-heading p {
+    margin-bottom: 15px;
+  }
+  hr.bar {
+    margin: 20px auto;
   }
 /* Mobile Location */
   .location-inner {
     height: auto;
   }
   .feature {
+    height: 100%;
     width: 100%;
     transform: none;
     position: relative;
@@ -261,6 +285,13 @@ bottom: 20px;
   .project-inner {
     height: auto;
     border: none;
+    overflow: hidden;
+  }
+  .project-info {
+    padding: 20px;
+  }
+  .project-info p {
+    position: relative;
   }
   .tab > div {
     float: none;
@@ -268,12 +299,13 @@ bottom: 20px;
   }
   .view-project {
     width: 100%;
-    
   }
   .btn {
     width: 100%;
-    bottom: -30px;
-    padding-bottom: 35px;
+    bottom: 5px;
+  }
+  .btn label {
+    background-color: #000;
   }
 /* Mobile Hiring */
   .hiring-main {
@@ -304,7 +336,7 @@ bottom: 20px;
     padding: 50px 0;
   }
   .hiring-slogan p {
-    font-size: 26px;
+    font-size: 25px;
   }
   .hiring-slogan p:before {
     top: -120px;
@@ -314,7 +346,7 @@ bottom: 20px;
     display: block;
   }
   .center-child h2 {
-    font-size: 26px;
+    font-size: 23px;
   }
   
 /* Mobile Project */
@@ -337,6 +369,12 @@ bottom: 20px;
   }
   .detail div {
     font-size: 13px;
+  }
+  
+/* Featherlights Mobile CSS */
+  .featherlight .featherlight-close-icon {
+    font-size: 25px;
+    right: 30px;
   }
 }
 

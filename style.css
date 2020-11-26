@@ -223,7 +223,7 @@ header {
   width: 45%;
   position: absolute;
   top: 50%;
-  left: 150px;
+  margin-left: 150px;
   transform: translateY(-50%);
 }
 .item {
@@ -255,11 +255,13 @@ header {
   font-size: 18px;
   line-height: 1.5em;
   margin: 5px 0;
+  overflow: hidden;
 }
 /* Project Section   */
 .project-inner {
   height: 100%;
   background-color: #fff;
+  padding-bottom: 25px;
 }
 .tabs {
   height: 100%;
@@ -491,7 +493,6 @@ input[id=tab3]:checked ~ .tabs {
   width: 70%;
 }
 .victory-jump {
-  background-color: #fff;
 }
 .victory-jump img {
   position: absolute;
@@ -864,7 +865,7 @@ hr.bar {
   background-color: #25D366;
 }
 
-/* SubPage : Hiring 2  */
+/* SubPage : Project Detail  */
 .hiring-main.project-main1 {
   background: url(images/sea00.jpg) no-repeat center center;
   background-size: cover;
@@ -910,8 +911,8 @@ hr.bar {
   }
 }
 
-.modal.project-detail .hiring-info {
-  margin: 0;
+.project-detail .hiring-info {
+  margin-bottom: 0;
 }
 
 .project-detail .hiring-slogan p:before {
